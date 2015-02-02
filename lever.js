@@ -16,7 +16,7 @@ module.exports = function(five) {
     }
 
     function Lever(pin) {
-      five.Sensor.call(this, "A" + pin);
+      five.Sensor.call(this, pin);
 
       var last = Object.assign({}, new Lever.Event(0x00));
 
